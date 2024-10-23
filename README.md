@@ -1,61 +1,75 @@
-# Проект - База данных для магазина велосипедов.
+# Project - Bicycle Store Database
 
-## Описание
-Данный проект представляет собой разработку базы данных для хранения и обработки информации о велосипедах. База данных включает таблицы для хранения данных о велосипедах, поставщиках, производителях и других справочных данных. Она поддерживает ввод, редактирование и просмотр данных, а также обеспечивает разграничение ролей пользователей: оператор, пользователь и администратор базы данных.
+## Description
+This project represents the development of a database for storing and managing information about bicycles. The database includes tables for storing data about bicycles, suppliers, manufacturers, and other reference data. It supports data entry, editing, and viewing, and provides role-based access control for users: operator, user, and administrator.
 
-## Основные функции
-**В проекте реализованы следующие возможности:**
-- Ввод, редактирование и просмотр данных о велосипедах.
-- Использование таблиц-справочников и связанных таблиц.
-- Поддержка ролей пользователей: оператор, пользователь и администратор.
-- Выполнение различных запросов для анализа данных о велосипедах.
+## Key Features
+**The project implements the following functionalities:**
+- Data entry, editing, and viewing for bicycles.
+- Use of reference tables and related tables.
+- Support for user roles: operator, user, and administrator.
+- Execution of various queries for data analysis about bicycles.
 
-## Запросы
-**В проекте реализованы следующие запросы к базе данных:**
-- Сведения о каждом виде велосипеда
-Получение информации о велосипедах (наименование, год выпуска, место изготовления, цена, поставщик, производитель и т.д.) для каждого вида велосипеда (горный, шоссейный, детский, тандем и т.д.).
+## Queries
+**The project implements the following database queries:**
+- **Bicycle Information**  
+  Retrieves information about bicycles (name, release year, place of manufacture, price, supplier, manufacturer, etc.) for each type of bicycle (mountain, road, children's, tandem, etc.).
 
-- Сортировка велосипедов
-Вывод списка велосипедов, отсортированного по году выпуска, поставщику или стоимости.
+- **Bicycle Sorting**  
+  Displays a list of bicycles sorted by release year, supplier, or price.
 
-- Анализ цен
-Поиск самого дорогого и самого дешевого велосипеда, а также расчёт средней стоимости велосипедов.
+- **Price Analysis**  
+  Finds the most expensive and cheapest bicycle and calculates the average bicycle price.
 
-- Велосипеды с высокой стоимостью
-Поиск всех велосипедов с ценой выше заданной (например, 10 000 р.), с возможностью ввода цены с клавиатуры.
+- **High-Cost Bicycles**  
+  Finds all bicycles priced above a specified amount (e.g., 10,000 RUB), with an option to enter the price manually.
 
-- Анализ велосипедов за период
-Поиск велосипедов, выпущенных за определённый период (месяц, 3 месяца, 6 месяцев), с расчётом средней стоимости, самого дорогого и самого дешевого велосипеда.
+- **Bicycle Analysis by Period**  
+  Finds bicycles released in a specific period (month, 3 months, 6 months), with calculations for average price, the most expensive, and the cheapest bicycle.
 
-- Доля велосипедов по городу
-Поиск доли велосипедов, поступивших из указанного города, от общего числа велосипедов.
+- **Bicycle Share by City**  
+  Finds the share of bicycles that arrived from a specified city, relative to the total number of bicycles.
 
-- Велосипеды по дате выпуска
-Поиск всех велосипедов, выпущенных в заданную дату.
+- **Bicycles by Release Date**  
+  Finds all bicycles released on a specified date.
 
-- Велосипеды по поставщику и стоимости
-Поиск всех велосипедов заданного поставщика, чья стоимость находится в определённом диапазоне.
+- **Bicycles by Supplier and Price**  
+  Finds all bicycles from a specified supplier, whose price falls within a specified range.
 
-- Доля велосипедов по поставщику
-Поиск доли велосипедов, поступивших от указанного поставщика, от общего числа поставщиков.
+- **Bicycle Share by Supplier**  
+  Finds the share of bicycles delivered by a specified supplier relative to the total number of suppliers.
 
-- Велосипеды по году и стоимости
-Поиск всех велосипедов, выпущенных в заданный год, чья стоимость больше указанной.
+- **Bicycles by Year and Price**  
+  Finds all bicycles released in a specified year, whose price exceeds the specified value.
 
-- Велосипеды по производителю
-Поиск всех велосипедов определённого производителя.
+- **Bicycles by Manufacturer**  
+  Finds all bicycles from a specific manufacturer.
 
-- Доля проданных велосипедов за период
-Поиск доли велосипедов, проданных за указанный период, от общего времени продаж.
+- **Bicycle Sales Share by Period**  
+  Finds the share of bicycles sold during a specified period relative to the total sales time.
 
-- Сравнение цен по странам
-Поиск всех велосипедов заданного поставщика, чья стоимость больше средней стоимости велосипедов, поступивших из заданной страны.
+- **Price Comparison by Country**  
+  Finds all bicycles from a specified supplier whose price exceeds the average bicycle price delivered from a specified country.
 
-- Доля дешёвых велосипедов
-Поиск доли дешёвых велосипедов (чья стоимость меньше заданной) проданных указанному клиенту и в целом.
+- **Share of Low-Cost Bicycles**  
+  Finds the share of low-cost bicycles (priced below a specified value) sold to a specified client and overall.
 
-- Средняя стоимость проданных велосипедов
-Расчёт средней стоимости велосипедов, проданных за определённый промежуток времени.
+- **Average Price of Sold Bicycles**  
+  Calculates the average price of bicycles sold during a specified time period.
 
-- Велосипеды дороже среднего по производителю
-Поиск всех велосипедов, чья стоимость выше средней стоимости велосипедов указанного производителя.
+- **Bicycles Priced Above Manufacturer’s Average**  
+  Finds all bicycles whose price is higher than the average price of bicycles from a specified manufacturer.
+
+## Technologies
+- PostgreSQL for database creation.
+- C# for database interaction.
+- Entity Framework for data management.
+- User roles: operator, user, administrator.
+
+## Installation and Launch
+- Install PostgreSQL.
+- Set up the database using the provided SQL script.
+- Run the project in Visual Studio.
+- Configure the connection strings in the configuration file.
+- Log in using one of the roles (operator, user, administrator).
+- Manage the database using the provided queries.
