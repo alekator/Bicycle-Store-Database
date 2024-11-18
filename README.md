@@ -1,4 +1,3 @@
-
 # Project - Bicycle Store Database
 
 ## Description
