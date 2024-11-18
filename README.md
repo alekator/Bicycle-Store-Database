@@ -73,3 +73,4 @@ This project represents the development of a database for storing and managing i
 - Configure the connection strings in the configuration file.
 - Log in using one of the roles (operator, user, administrator).
 - Manage the database using the provided queries.
+
